@@ -1,0 +1,5 @@
+hist(dust$pm25, main="서울시 서대문구 2022년 1월 초미세먼지 측정분포", col = terrain.colors(12),freq= FALSE)
+lines(density(dust$pm25),lwd = 2)     
+boxplot(dust$X3pm25,dust$X7pm25, main="야식업의 2022년 1월 미세먼지 발생현황", col="yellow")
+plot(x=dust$pm10, y=dust$pm25, xlab="미세먼지", ylab="초미세먼지", main="미세먼지와 초미세먼지의 변화", pch=24, col="red",bg="yellow", cex=1.5)
+plot(x=dust$pm10, y=dust$pm25, xlab="미세먼지", ylab="초미세먼지", main="미세먼지와 초미세먼지의 변화", type = "h")
